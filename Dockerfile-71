@@ -31,6 +31,9 @@ RUN apt-get update \
     libmcrypt-dev \
   && rm -rf /var/lib/apt/lists/*
 
+# Install nano
+RUN apt-get install nano
+
 # Install the PHP mcrypt extention
 RUN docker-php-ext-install mcrypt \
   # Install the PHP pdo_mysql extention

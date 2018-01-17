@@ -30,6 +30,9 @@ RUN apt-get update && \
         libssl-dev \
         libmcrypt-dev
 
+# Install nano
+RUN apt-get install nano
+
 # Install the PHP mcrypt extention
 RUN docker-php-ext-install mcrypt
 
